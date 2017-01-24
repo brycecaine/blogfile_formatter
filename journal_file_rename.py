@@ -75,7 +75,7 @@ for filename in filenames:
                     file_date_str, folder_name, clean_filename, extension)
 
                 if os.path.exists(newname):
-                    outcome = 'Destination file exists  ; not renamed'
+                    outcome = 'Destination file exists;   not renamed  '
                     continue
 
                 else:
@@ -86,12 +86,12 @@ for filename in filenames:
                         outcome = 'Renamed'
 
                     else:
-                        outcome = 'Not in edit mode         ; not renamed'
+                        outcome = 'Not in edit mode;          not renamed  '
             else:
-                outcome = 'Invalid date             ; not renamed'
+                outcome = 'Invalid date;              not renamed  '
         else:
-            outcome = 'No date found            ; not renamed'
+            outcome = 'No date found;             not renamed  '
     else:
-        outcome = 'Already formatted       ; not renamed'
+        outcome = 'Already formatted;         not renamed  '
 
     print('%s: %s -- to -- %s' % (outcome, filename, newname))
